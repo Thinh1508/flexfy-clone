@@ -1,6 +1,7 @@
 import "./styles.scss"
 import { BiSearchAlt } from "react-icons/bi"
 import { LiaShoppingBagSolid, LiaUserSolid } from "react-icons/lia"
+import { HeaderMenu } from "./HeaderMenu"
 
 export const Header = () => {
   return (
@@ -25,8 +26,8 @@ export const Header = () => {
         </div>
         <a href="/" className="banner__logo">
           <svg
-            width="135"
-            height="50"
+            width="65"
+            height="26"
             viewBox="0 0 65 26"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -167,11 +168,11 @@ export const Header = () => {
         </a>
         <div className="banner__option">
           <a href="/" className="option__item">
-            <LiaShoppingBagSolid className="icon" size={28} />
+            <LiaShoppingBagSolid className="icon" size={34} />
             <span>0</span>
           </a>
           <a href="/" className="option__item">
-            <LiaUserSolid className="icon" size={30} />
+            <LiaUserSolid className="icon" size={34} />
           </a>
           <div className="banner__search">
             <input
@@ -179,41 +180,11 @@ export const Header = () => {
               placeholder="search"
               className="banner__search-input"
             />
-            <BiSearchAlt className="icon-search" size={26} />
+            <BiSearchAlt className="icon-search" size={32} />
           </div>
         </div>
       </div>
-      <div className="header__menu">
-        <a href="/" className="menu__item">
-          <p>
-            SUMMER VIBE COLLECTION <span>2023</span>
-          </p>
-        </a>
-        <a href="/" className="menu__item menu__item--active">
-          <p>NEW</p>
-        </a>
-        <a href="/" className="menu__item">
-          <p>BEST SELLERS</p>
-        </a>
-        <a href="/" className="menu__item">
-          <p>SHIRT</p>
-        </a>
-        <a href="/" className="menu__item">
-          <p>JEANS</p>
-        </a>
-        <a href="/" className="menu__item">
-          <p>JACKET</p>
-        </a>
-        <a href="/" className="menu__item">
-          <p>CLOTHING & ACCESSORIES</p>
-        </a>
-        <a href="/" className="menu__item">
-          <p>COLLECTION</p>
-        </a>
-        <a href="/" className="menu__item">
-          <p>SALE</p>
-        </a>
-      </div>
+      <HeaderMenu />
     </header>
   )
 }

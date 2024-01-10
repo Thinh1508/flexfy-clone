@@ -1,0 +1,73 @@
+.home__banner {
+  width: 100%;
+  height: 675px;
+  position: relative;
+
+  .banner__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.best-seller {
+  width: 100%;
+
+  .product-list {
+    padding: 50px 0 25px 96px;
+
+    &__header {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        margin: 0;
+        font-family: "Nunito Sans";
+        font-weight: 700;
+        font-size: 30px;
+        margin-right: 23px;
+        color: #111111;
+      }
+    }
+
+    &__body {
+      height: 590px;
+      margin: 42px 0;
+
+      .product-list__cart {
+        height: 100%;
+        position: relative;
+
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+          font-size: 18px;
+          background: #fff;
+        }
+
+        .swiper__navigation {
+          position: absolute;
+          top: -40px;
+          right: 0;
+          display: flex;
+          align-items: center;
+
+          .custom-next,
+          .custom-prev {
+            height: 30px;
+            color: black;
+            cursor: pointer;
+          }
+
+          .disabled {
+            color: #c3c3c3;
+          }
+        }
+      }
+    }
+  }
+}
