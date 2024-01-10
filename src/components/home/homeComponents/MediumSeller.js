@@ -1,15 +1,15 @@
 import { ButtonCustom } from "../../../components/Button"
 import { ProductSwiper } from "./ProductSwiper"
 
-export const BestSeller = () => {
+export const MediumSeller = () => {
   return (
     <div className="seller">
       <div className="product-list">
         <div className="product-list__header">
           <h1 href="/" className="product-list__title">
-            Best Sellers
+            Up to 30% Off
           </h1>
-          <ButtonCustom>shop now</ButtonCustom>
+          <ButtonCustom>shop Bras</ButtonCustom>
         </div>
         <div className="product-list__body">
           <div className="product-list__cart">
@@ -27,7 +27,7 @@ const data = [
     price: 48,
     star: 4,
     review: "17",
-    image: "/product1.jpg",
+    image: "/upto1.jpg",
     crewFave: true,
     newArrival: false,
     color: ["color1", "color2", "color3"],
@@ -37,7 +37,7 @@ const data = [
     price: 7,
     star: 4,
     review: "317",
-    image: "/product2.jpg",
+    image: "/upto2.jpg",
     crewFave: false,
     newArrival: true,
     color: ["color2", "color3"],
@@ -47,7 +47,7 @@ const data = [
     price: 8,
     star: 4,
     review: "31",
-    image: "/product3.jpg",
+    image: "/upto3.jpg",
     crewFave: false,
     newArrival: false,
     color: ["color1", "color3"],
@@ -57,7 +57,7 @@ const data = [
     price: 18,
     star: 4,
     review: "1",
-    image: "/product4.jpg",
+    image: "/upto4.jpg",
     crewFave: false,
     newArrival: false,
     color: ["color2", "color3"],
@@ -67,7 +67,7 @@ const data = [
     price: 28,
     star: 4,
     review: "3",
-    image: "/product5.jpg",
+    image: "/upto5.jpg",
     crewFave: false,
     newArrival: false,
     color: ["color1", "color2", "color3"],
@@ -77,7 +77,7 @@ const data = [
     price: 38,
     star: 4,
     review: "37",
-    image: "product6.jpg",
+    image: "upto6.jpg",
     crewFave: false,
     newArrival: false,
     color: ["color1", "color2", "color3"],
@@ -87,7 +87,7 @@ const data = [
     price: 58,
     star: 4,
     review: "17",
-    image: "/product2.jpg",
+    image: "/upto7.jpg",
     crewFave: false,
     newArrival: false,
     color: ["color1", "color2", "color3"],

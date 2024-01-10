@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 .home__banner {
   width: 100%;
   height: 675px;
@@ -11,7 +13,7 @@
   }
 }
 
-.best-seller {
+.seller {
   width: 100%;
 
   .product-list {
@@ -32,8 +34,8 @@
     }
 
     &__body {
-      height: 590px;
-      margin: 42px 0;
+      height: 530px;
+      margin-top: 42px;
 
       .product-list__cart {
         height: 100%;
@@ -68,6 +70,171 @@
           }
         }
       }
+
+      &--low {
+        height: 343px;
+        margin-top: 18px;
+      }
+
+      &--ourCrew {
+        margin-top: 18px;
+      }
     }
+  }
+}
+
+.banner-bottom {
+  width: 100%;
+  height: 700px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  background-color: #111111;
+  display: flex;
+
+  .banner-bottom__content {
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+    .banner-bottom__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+.home-promotion {
+  height: 468px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+
+  &__wrapper {
+    width: 50%;
+    height: 100%;
+    background-color: #ffdeb4;
+
+    .home-promotion__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 1px;
+
+      .home-promotion__title {
+        font-family: "Nunito Sans";
+        font-weight: 800;
+        font-size: 32px;
+        color: #111111;
+        margin: 0;
+      }
+
+      .home-promotion__text {
+        margin-top: 15px;
+        margin-bottom: 36px;
+        font-family: "Nunito Sans";
+        font-size: 18px;
+        font-weight: 500;
+
+        span {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+
+.home-communication {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-style: italic;
+      font-weight: 500;
+      margin-right: 15px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    .home-communication__social--item {
+      width: 44px;
+      height: 44px;
+      background-color: $primary-color;
+      border-radius: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+
+      .icon-tiktok {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.home-community {
+  width: 100%;
+  height: 480px;
+  display: flex;
+
+  &__content {
+    width: 25%;
+    height: 100%;
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}
+
+.home-confidence {
+  width: 100%;
+  height: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+
+  &__title {
+    font-size: 45px;
+    color: #000;
+    font-family: Playfair Display, serif;
+    font-weight: 400;
+    letter-spacing: unset;
+    font-style: italic;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #000;
+    font-family: "Nunito Sans";
+    font-weight: 500;
+    margin-top: 26px;
+    margin-bottom: 54px;
   }
 }

@@ -24,4 +24,42 @@
     top: 85%;
     right: 15%;
   }
+
+  &--low {
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    font-size: 16px;
+  }
+
+  &--bannerL {
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 16px;
+  }
+
+  &--bannerR {
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 16px;
+  }
+
+  &--join {
+    background-color: #fff;
+    width: max-content;
+    padding: 10px 40px;
+  }
+
+  &--KOLs {
+    width: max-content;
+    padding: 10px 40px;
+  }
 }
