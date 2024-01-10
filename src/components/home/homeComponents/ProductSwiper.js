@@ -47,8 +47,8 @@ export const ProductSwiper = ({ data, type }) => {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={handleSlideChange}
       >
-        {data.map((product) => (
-          <SwiperSlide>
+        {data.map((product, index) => (
+          <SwiperSlide key={index}>
             {type ? (
               type === "OurCrew" ? (
                 <ProductCartOurCrew product={product} />
