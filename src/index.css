@@ -16,3 +16,29 @@ h1,
 p {
   margin: 0;
 }
+
+.message {
+  width: 50px;
+  height: 50px;
+  background-color: #a39594;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+}
+@media (max-width: 640px) {
+  .message {
+    width: 40px;
+    height: 40px;
+  }
+
+  .message .message-icon {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -46,6 +46,24 @@ export const ProductSwiper = ({ data, type }) => {
         className="mySwiper"
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={handleSlideChange}
+        breakpoints={{
+          1: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2.5,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1280: {
+            slidesPerView: 4,
+          },
+          1400: {
+            slidesPerView: 5,
+          },
+        }}
       >
         {data.map((product, index) => (
           <SwiperSlide key={index}>

@@ -68,3 +68,18 @@
     padding: 10px 20px;
   }
 }
+
+@media (max-width: 640px) {
+  .btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+  }
+
+  .btn--join {
+    font-size: 14px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px;
+  }
+}

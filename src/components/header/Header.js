@@ -1,18 +1,30 @@
-import "./styles.scss"
-import { BiSearchAlt } from "react-icons/bi"
+import { useState } from "react"
+import { CgMenuLeftAlt } from "react-icons/cg"
 import { LiaShoppingBagSolid, LiaUserSolid } from "react-icons/lia"
+import { BiSearchAlt } from "react-icons/bi"
+
+import "./styles.scss"
 import { HeaderMenu } from "./HeaderMenu"
+import Drawer from "./drawer/Drawer"
 
 export const Header = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+
+  const openDrawer = () => {
+    setIsDrawerOpen(true)
+  }
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false)
+  }
+
   return (
     <header className="header">
       <div className="header__promo-bar">
         <a href="/" className="header__promo-bar__link">
-          <div>
-            <p className="header__promo-bar__text">
-              Sign up now and get <span>₱50</span> coupon
-            </p>
-          </div>
+          <p className="header__promo-bar__text">
+            Sign up now and get <span>₱50</span> coupon
+          </p>
         </a>
       </div>
       <div className="header__banner">
@@ -23,6 +35,10 @@ export const Header = () => {
           <a href="/" className="list__item">
             fit guide
           </a>
+          <div className="menu-mobile" onClick={openDrawer}>
+            <CgMenuLeftAlt size={30} />
+          </div>
+          <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} />
         </div>
         <a href="/" className="banner__logo">
           <svg
